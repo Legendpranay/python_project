@@ -54,14 +54,47 @@ plt.show()
 ```
 # Image
 
-Visualization Of Top Skills For Data Nerds
-
-![alt text](image-1.png)
+![Visualization Of Top Skills For Data Nerds](Images\Skills_demand.png)
 
 # Insights
 
-1. Data Analysts must master SQL (52%) and Python (36%)—these are non-negotiable. Excel (35%), Tableau (27%), and Power BI (21%) dominate the visualization space, proving that analysts are expected to turn raw data into clear, actionable insights.
+- Data Analysts must master SQL (52%) and Python (36%)—these are non-negotiable. Excel (35%), Tableau (27%), and Power BI (21%) dominate the visualization space, proving that analysts are expected to turn raw data into clear, actionable insights.
 
-2. Data Engineers are the backbone of data infrastructure, with SQL (68%) and Python (61%) as their core tools. Spark (38%), AWS (37%), and Azure (36%) show that engineers are expected to build scalable systems using cutting-edge cloud and big data technologies.
+- Data Engineers are the backbone of data infrastructure, with SQL (68%) and Python (61%) as their core tools. Spark (38%), AWS (37%), and Azure (36%) show that engineers are expected to build scalable systems using cutting-edge cloud and big data technologies.
 
-3. Data Scientists are driven by Python (70%) and SQL (48%), the engines behind modeling and experimentation. AWS (19%) and Tableau (18%) appear as supporting skills, but the real expectation is deep analytical thinking powered by code.
+- Data Scientists are driven by Python (70%) and SQL (48%), the engines behind modeling and experimentation. AWS (19%) and Tableau (18%) appear as supporting skills, but the real expectation is deep analytical thinking powered by code.
+
+# 2. How are in demand skills trending for Data Analysts?
+
+To find how skills are trending in 2023 for Data Analysts, I filtered data analyst positions and grouped the skills by the month of the job postings. This got me the top 5 skills of data analysts by month, showing how popular skills were throughout 2023.
+
+View my notebook with detailed steps here:
+[3_Skills_Trend](C:\Users\lenovo\Documents\python_project\Project\3_Skills_Trend.ipynb)
+
+# Visualize Data
+
+```PYTHON
+df_plot = df_DA_percent.iloc[:,:5]
+sns.lineplot(data=df_plot, dashes=False, palette="tab10")
+sns.set_theme(style='ticks')
+sns.despine()
+
+from matplotlib.ticker import PercentFormatter
+ax = plt.gca()
+ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+for i in range(5):
+    plt.text(11.2,df_plot.iloc[-1, i], df_plot.columns[i])
+```
+# Results
+
+![Visualization Of Top Skills For Data Nerds](image.png)
+
+# Insights
+
+- SQL leads consistently, peaking at 70% in May—core to data workflows.
+- Python stays stable around 50%, reflecting its versatility in analytics.
+- Excel spikes to 60% in June but fluctuates, showing transitional relevance.
+- Tableau & Power BI hover between 25–40%, with no clear visualization leader.
+
+# 
