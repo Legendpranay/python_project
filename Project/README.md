@@ -54,7 +54,7 @@ plt.show()
 ```
 # Image
 
-![Visualization Of Top Skills For Data Nerds](Images\Skills_demand.png)
+![Visualization Of Top Skills For Data Nerds](image.png)
 
 # Insights
 
@@ -88,8 +88,7 @@ for i in range(5):
 ```
 # Results
 
-![Visualization Of Top Skills For Data Nerds](image.png)
-
+![Visualization Of Top Skills For Data Nerds](image-1.png)
 # Insights
 
 - SQL leads consistently, peaking at 70% in May—core to data workflows.
