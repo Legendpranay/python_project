@@ -56,7 +56,7 @@ plt.show()
 
 Visualization Of Top Skills For Data Nerds
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 # Insights
 
