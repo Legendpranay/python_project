@@ -32,7 +32,7 @@ plt.show()
 ```
 ### Image
 
-![Visualization Of Top Skills For Data Nerds](image.png)
+![Likelihood of skills](Images\Likelihood_of_Skills.png)
 *Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.*
 
 ### Insights
@@ -67,7 +67,7 @@ for i in range(5):
 ```
 ### Results
 
-![Visualization Of Top Skills For Data Nerds](image-1.png)
+![Visualization Of Top Skills For Data Nerds](Images\Skills_Requested.png)
 *Visualization Of Top Skills For Data Nerds*
 
 ### Insights
@@ -92,7 +92,7 @@ plt.show()
 ```
 ### Results
 
-![alt text](image-2.png)
+![alt text](Images\Salary_distribution.png)
 *Box plot visualizing the salary distributions for the top 6 data job titles.*
 
 ### Insights
@@ -119,7 +119,7 @@ plt.show()
 
 Here's the breakdown of the highest-paid & most in-demand skills for data analysts in the India:
 
-![alt text](image-3.png)
+![alt text](Images\Top_skills.png)
 *Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in the India.*
 
 ### Insights:
@@ -144,7 +144,7 @@ plt.show()
 ```
 ### Results
 
-![alt text](image-4.png)
+![alt text](Images\Optimal_skills.png)
 *A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the India.*
 
 ### Insights:
@@ -171,7 +171,7 @@ sns.set_theme(style='ticks')
 ```
 ### Results
 
-![alt text](image-5.png)
+![alt text](Images\Optimal_skill.png)
 *A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the India with color labels for technology.*
 
 ### Insights:
