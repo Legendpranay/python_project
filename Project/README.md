@@ -25,36 +25,15 @@ View my notebook with detailed steps here: [2_Skill_Demand](C:\Users\lenovo\Docu
 ### Visualize Data
 
 ```python
-
-fig, ax = plt.subplots(len(job_titles), 1 , figsize=(8, 6))
-if len(job_titles) == 1:
-    ax = [ax]
-
-sns.set_theme(style='ticks')
-
-for i, job_title in enumerate(job_titles):
-    df_plot = df_skills_perc[df_skills_perc['job_title_short'] == job_title].head(5)
-    sns.barplot(data=df_plot, x='skill_percent', y='job_skills', ax=ax[i], hue = 'skill_percent', palette = 'dark:b_r')
-    ax[i].set_title(job_title)
-    ax[i].set_ylabel(' ')
-    ax[i].set_xlabel(' ')
-    ax[i].set_xlim(0, 78)
-    ax[i].legend().set_visible(False)
-
-    for n, v in enumerate(df_plot['skill_percent']):
-        ax[i].text(v+1 , n , f'{v:.0f}%', va='center')
-
-    if i != len(job_titles) - 1:
-        ax[i].set_xticks([])
-
-
-fig.suptitle('Counts Of Top Skills in Job Postings', fontsize = 15)
-fig.tight_layout(h_pad=0.5)
+fig, ax = plt.subplots(len(job_titles), 1)
+fig.suptitle('Likelihood of Skills Requested in India Job Postings', fontsize=15)
+fig.tight_layout(h_pad=.8)
 plt.show()
 ```
 ### Image
 
 ![Visualization Of Top Skills For Data Nerds](image.png)
+*Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.*
 
 ### Insights
 
@@ -89,6 +68,8 @@ for i in range(5):
 ### Results
 
 ![Visualization Of Top Skills For Data Nerds](image-1.png)
+*Visualization Of Top Skills For Data Nerds*
+
 ### Insights
 
 - SQL leads consistently, peaking at 70% in May—core to data workflows.
@@ -126,13 +107,10 @@ Next, I narrowed my analysis and focused only on data analyst roles. I looked at
 
 ### Visualize Data
 ```python
-
 fig, ax = plt.subplots(2, 1)  
 
-# Top 10 Highest Paid Skills for Data Analysts
 sns.barplot(data=df_DA_top_pay, x='median', y=df_DA_top_pay.index, hue='median', ax=ax[0], palette='dark:b_r')
 
-# Top 10 Most In-Demand Skills for Data Analystsr')
 sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, hue='median', ax=ax[1], palette='light:b')
 
 plt.show()
@@ -142,8 +120,7 @@ plt.show()
 Here's the breakdown of the highest-paid & most in-demand skills for data analysts in the India:
 
 ![alt text](image-3.png)
-
-Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in the India.
+*Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in the India.*
 
 ### Insights:
 
@@ -168,8 +145,7 @@ plt.show()
 ### Results
 
 ![alt text](image-4.png)
-
-A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the India.
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the India.*
 
 ### Insights:
 - SQL and Python appear in 50%+ of job listings, making them essential for employability.
@@ -196,8 +172,7 @@ sns.set_theme(style='ticks')
 ### Results
 
 ![alt text](image-5.png)
-
-**A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the India with color labels for technology.*
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the India with color labels for technology.*
 
 ### Insights:
 
