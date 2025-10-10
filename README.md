@@ -67,7 +67,7 @@ for i in range(5):
 ```
 ### Results
 
-![Visualization Of Top Skills For Data Nerds](Images\Skills_Requested.png)
+![Visualization Of Top Skills For Data Nerds](Project\Images\Skills_Requested.png)
 *Visualization Of Top Skills For Data Nerds*
 
 ### Insights
