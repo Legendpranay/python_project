@@ -68,7 +68,7 @@ for i in range(5):
 ```
 ### Results
 
-![alt text](image-1.png)
+![alt text](Images/image-1.png)
 *Visualization Of Top Skills For Data Nerds*
 
 ### Insights
@@ -172,7 +172,7 @@ sns.set_theme(style='ticks')
 ```
 ### Results
 
-![alt text](Images\image-1.png)
+![alt text](image-5.png)
 *A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in the India with color labels for technology.*
 
 ### Insights:
