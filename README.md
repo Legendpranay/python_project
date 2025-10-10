@@ -32,7 +32,7 @@ plt.show()
 ```
 ### Image
 
-![Likelihood of skills](Images\Likelihood_of_Skills.png)
+![Likelihood of skills](Plots\Likelihood_of_Skills.png)
 *Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.*
 
 ### Insights
